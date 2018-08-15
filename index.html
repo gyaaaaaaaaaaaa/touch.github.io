@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>touch</title>
+</head>
+<body>
+<h1>touch</h1>
+<p>画像タップで変化</p>
+  <div id="beforeImage" style="text-align: center;"><img width="100" onclick="touch_00001()" src="https://3.bp.blogspot.com/-0fSDqlnZA_k/WOXMUGhKQuI/AAAAAAAABG4/TUrDlIjwNzcbg4-x6X06WwOQOFc8xi3XQCLcB/s1600/tumblr_on65ucf1oh1vpybydo10_1280.png" /></div>
+  <div id="afterImage" style="display: none; text-align: center;"><img width="100" onclick="touch_00002()" src="https://4.bp.blogspot.com/-qUVdhb57b3w/WOT2rHHp2tI/AAAAAAAABGk/jlR9Je1QFcIQf4tFabp7HyEfAr5JY16BgCLcB/s1600/tumblr_oh8qjjtavO1t107ayo1_400.gif" /></div>
+  <script type="text/javascript">
+    function touch_00001 () {
+      document.getElementById("beforeImage").style.display = "none";
+      document.getElementById("afterImage").style.display = "block";
+    }
+    function touch_00002 () {
+      document.getElementById("beforeImage").style.display = "block";
+      document.getElementById("afterImage").style.display = "none";
+    }
+  </script>
+</body>
+</html>
